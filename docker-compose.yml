@@ -4,16 +4,16 @@ services:
   scraper:
     container_name: scraper
     hostname: scraper
-    build: ./Metall_Scraper/
+    build: ./apps/Metall_Scraper/
     env_file:
-      - ./Metall_Scraper/.env
+      - ./apps/Metall_Scraper/.env
     restart:
       always
   tg_bot:
     container_name: tg_bot
     hostname: tg_bot
-    build: ./Metall_Main_Bot/
+    build: ./apps/Metall_Main_Bot/
     env_file:
-      - ./Metall_Main_Bot/.env
+      - ./apps/Metall_Main_Bot/.env
     restart:
       always
