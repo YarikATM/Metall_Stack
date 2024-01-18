@@ -14,6 +14,6 @@ services:
     hostname: tg_bot
     build: ./Metall_Main_Bot/
     env_file:
-      - ./Metall_Main_Bot.env
+      - ./Metall_Main_Bot/.env
     restart:
       always
