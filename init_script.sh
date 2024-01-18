@@ -35,7 +35,7 @@ init_and_update_repositories() {
 
     git pull
 
-    cd ..
+    cd ....
 }
 
 # Инициализация и обновление каждого репозитория
