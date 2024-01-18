@@ -1,0 +1,19 @@
+version: "2.4"
+
+services:
+  scraper:
+    container_name: scraper
+    hostname: scraper
+    build: ./scraper/
+    env_file:
+      - .env
+    restart:
+      always
+  tg_bot:
+    container_name: tg_bot
+    hostname: tg_bot
+    build: ./tg_bot/
+    env_file:
+      - .env
+    restart:
+      always
