@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Определение списка микросервисов
-SERVICES=("scraper" "tg_bot" )
+SERVICES=("Metall_Scraper" "Metall_Main_Bot" )
 
 # Определение пути к папке проекта
 PROJECT_DIR="apps"
@@ -33,7 +33,9 @@ init_and_update_repositories() {
         git checkout main
     fi
 
-    git pull 
+    git pull
+
+    cd ..
 }
 
 # Инициализация и обновление каждого репозитория
