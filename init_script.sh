@@ -44,7 +44,7 @@ for service in "${SERVICES[@]}"; do
     init_and_update_repositories "$service" "$repository_url"
 done
 
-Запуск docker-compose
-echo "Запуск docker-compose"
-cd ..
-docker-compose up -d
+#Запуск docker-compose
+#echo "Запуск docker-compose"
+#cd ..
+#docker-compose up -d
