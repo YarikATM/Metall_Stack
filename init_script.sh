@@ -47,6 +47,6 @@ done
 
 
 
-#Запуск docker-compose
-#echo "Запуск docker-compose"
-#docker-compose up -d
+# Запуск docker-compose
+echo "Запуск docker-compose"
+docker-compose up -d
