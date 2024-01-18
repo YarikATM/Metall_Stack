@@ -50,4 +50,4 @@ done
 # Запуск docker-compose
 echo "Запуск docker-compose"
 docker-compose build
-docker-compose up
+docker-compose up -d
