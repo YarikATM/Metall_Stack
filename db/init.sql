@@ -1,0 +1,10 @@
+
+
+CREATE DATABASE Metall;
+CREATE DATABASE Tg_metall;
+
+CREATE USER 'Admin'@'%' IDENTIFIED BY '25072004Yp';
+
+GRANT ALL PRIVILEGES ON Metall.* TO 'Admin'@'%';
+GRANT ALL PRIVILEGES ON Tg_metall.* TO 'Admin'@'%';
+
