@@ -10,6 +10,8 @@ if [ ! -d "$PROJECT_DIR" ]; then
         mkdir "$PROJECT_DIR"
 fi
 
+git pull
+
 # Функция для инициализации и обновления репозиториев микросервисов
 init_and_update_repositories() {
     local repository_name=$1
