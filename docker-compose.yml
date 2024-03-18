@@ -18,7 +18,10 @@ services:
     restart:
       always
 
+
   db:
+    container_name: db
+    hostname: db
     image: mysql:8.0
     cap_add:
       - SYS_NICE
