@@ -7,8 +7,8 @@ services:
     build: ./apps/Metall_Scraper/
     env_file:
       - ./apps/Metall_Scraper/.env
-    restart:
-      always
+#    restart:
+#      always
   tg_bot:
     container_name: tg_bot
     hostname: tg_bot
