@@ -10,11 +10,29 @@ GRANT ALL PRIVILEGES ON Tg_metall.* TO 'Admin'@'%';
 
 create table if not exists Metall.Price
 (
-    Id        int          null,
-    time      datetime     null,
-    City      varchar(155) null,
-    Company   varchar(155) null,
-    Name      varchar(100) null,
-    Price_Fiz float        null,
-    Price_Ur  float        null
+    Id        int auto_increment
+        primary key,
+    time      datetime     not null,
+    City      varchar(155) not null,
+    Company   varchar(155) not null,
+    Name      varchar(100) not null,
+    Price_Fiz float        not null,
+    Price_Ur  float        not null,
+    constraint Id
+        unique (Id)
 );
+
+
+
+create table Tg_metall.mail
+(
+    id      bigint auto_increment
+        primary key,
+    user_id int null,
+    constraint id
+        unique (id)
+);
+
+
+
+# DELETE FROM Metall.Price WHERE Price_Fiz >= 0;
