@@ -51,5 +51,6 @@ done
 
 # Запуск docker-compose
 echo "Запуск docker-compose"
-docker-compose build --no-cache
+docker-compose build
+#--no-cache
 docker-compose up -d
